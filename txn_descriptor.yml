@@ -1,0 +1,30 @@
+{
+  "transactions": {
+    "FUND_TRANSFER": {
+      "descriptorVersion": "v1",
+      "expectedIntents": [
+        "ACCOUNT_DEBIT",
+        "ACCOUNT_CREDIT",
+        "GL_POSTING"
+      ],
+      "executionOrder": [
+        "ACCOUNT_DEBIT",
+        "ACCOUNT_CREDIT",
+        "GL_POSTING"
+      ],
+      "timeoutMs": 5000
+    },
+    "CASH_WITHDRAWAL": {
+      "descriptorVersion": "v1",
+      "expectedIntents": [
+        "ACCOUNT_DEBIT",
+        "GL_POSTING"
+      ],
+      "executionOrder": [
+        "ACCOUNT_DEBIT",
+        "GL_POSTING"
+      ],
+      "timeoutMs": 3000
+    }
+  }
+}
