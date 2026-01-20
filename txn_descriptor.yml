@@ -8,6 +8,8 @@
         "GL_POSTING"
       ],
       "executionOrder": [
+        "AC_VALIDATE",
+        "LOAN_VALIDATE",
         "ACCOUNT_DEBIT",
         "ACCOUNT_CREDIT",
         "GL_POSTING"
@@ -28,3 +30,4 @@
     }
   }
 }
+
